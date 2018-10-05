@@ -45,8 +45,8 @@ class Owner
 
   def walk_dogs
     @@pets[:dogs].each do |dog|
-      dog.mood = 'happy'
-    end
+    dog.mood = 'happy'
+  end
   end
 
   def play_with_cats
@@ -68,7 +68,7 @@ class Owner
   def sell_pets
     pets.each do |pet, arr|
       arr.map do |pet|
-        pet.mood = 'nervous'
+        pet.mood =='nervous'
       end
       arr.clear
     end
