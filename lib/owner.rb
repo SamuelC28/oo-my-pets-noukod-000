@@ -5,9 +5,9 @@ class Owner
   @@pets = {:fishes => [], :dogs => [], :cats => []}
 
   def initialize(species)
-    # @species = species
-    # @name = name
-    # @@all << self
+    @species = species
+    @name = name
+    @@all << self
   end
 
 
@@ -57,19 +57,19 @@ class Owner
        dog.mood = 'happy'
      end
    end
- 
+
    def play_with_cats
      @@pets[:cats].each do |cat|
        cat.mood = 'happy'
      end
    end
- 
+
    def feed_fish
      @@pets[:fishes].each do |fish|
        fish.mood = 'happy'
      end
    end
-   
+
   def sell_pets
     pets.each do |pet, arr|
       arr.map do |pet|
